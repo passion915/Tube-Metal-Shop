@@ -1,0 +1,371 @@
+
+/* Constant */
+.bg-black {
+    background: black;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.pr-25 {
+    padding-right: 25px;
+}
+
+.pl-40 {
+    padding-left: 40px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mb-none {
+    margin-bottom: 0;
+}
+
+/* body */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Header */
+
+#header .navbar-nav .nav-item a {
+    color: #666666;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.9px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 10px;
+    display: block;
+    border-bottom: 2px solid transparent;
+} 
+
+#header .navbar-nav .nav-item:hover a {
+    color: #333;
+    opacity: 1;
+    background-color: #f7f7f7;
+    border-color: #000000;
+}
+
+.dropdown-menu {
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    margin-left: -1px;
+    width: 230px;
+}
+
+#header .dropdown-menu .dropdown-item {
+    border-bottom: 1px solid #eee;
+    color: grey;
+    display: block;
+    letter-spacing: 0.5px;
+}
+
+#header .dropdown-menu .dropdown-item:hover {
+    color: darkgrey;
+}
+
+.navbar-toggler {
+    background: #f7f7f7;
+}
+
+/* Main Video */
+.jumbotron > div {
+    width: 100% !important;
+}
+
+
+/* Carousel */
+ul.alice-carousel__stage li.alice-carousel__stage-item .gallery-item {
+    text-align: center;
+    padding: 0 10px;
+}
+
+ul.alice-carousel__stage li.alice-carousel__stage-item .gallery-item img {
+    width: 100%;
+}
+
+ul.alice-carousel__stage li.alice-carousel__stage-item .gallery-item h4 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    line-height: 22px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.heading-icon {
+    font-size: 16px;
+    color: white;
+}
+
+.garages-gallery div.row, .febrication-gallery div.row {
+    padding: 15px 0;
+}
+
+.fa-angle-left, .fa-angle-right {
+    background-color: #d1d1d1;
+    font-size: 20px;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    color: white;
+}
+
+.arrow-div button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.arrow-div i:hover {
+    background-color: #cc181e;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.gallery-item a:before, .gallery-item a:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.gallery-item a {
+    position: relative;
+}
+
+.carports-section .gallery-item a img {
+    width: 100%;
+}
+
+.gallery-item a:before {
+    color: #fff;
+    content: "\f01d";
+    font-family: "FontAwesome";
+    font-size: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
+    z-index: 11;
+}
+
+.gallery-section {
+    padding: 80px 0;
+    background: black;
+}
+
+/* Carports Section */
+
+.carports-section, .hiring-section {
+    padding: 70px 0;
+}
+
+.carports-section .section-title i {
+    padding: 7px 10px;
+    background: black;
+}
+
+.carports-section div.title-div {
+    padding: 15px 0;
+}
+
+.see-all-div a {
+    color: #cc181e;
+    padding-left: 10px;
+    line-height: 24px;
+    position: relative;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.gallery-item h4 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    line-height: 22px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.carports-section .gallery-item {
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .hiring-section img {
+        width: 100%;
+    }
+}
+
+
+
+/* Footer */ 
+
+#footer {
+    background: #000000;
+    color: #666666;
+}
+
+.call-to-action-area {
+    padding: 40px 0;
+    color: #fff;
+}
+
+.themeix-purchase-btn-3 {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #cc181e;
+    -webkit-transition: all .4s linear 0s;
+    transition: all .4s linear 0s;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.themeix-purchase-btn-3:hover {
+    text-decoration: none;
+    background-color: #3694f4;
+    color: #fff;
+}
+
+.widget-block {
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.footer-heading-wrap {
+    margin-bottom: 10px;
+}
+
+.footer-heading {
+    display: inline-block;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.single-footer .social-links {
+    margin-top: 20px;
+}
+
+#footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#footer .heading-icon {
+    color: #fff;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 10px;
+    text-align: center;
+    width: 35px;
+}
+
+.widget-block .social-links ul li {
+    border: none;
+    width: inherit;
+    float: left;
+}
+
+.social-links ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #cfcbcb;
+    margin-right: 5px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #fff;
+    -webkit-transition: all .4s linear 0s;
+    transition: all .4s linear 0s;
+}
+
+.widget-block .social-links a:hover {
+    background-color: #676263;
+    color: #fff;
+}
+
+.single-footer-text p {
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.widget-block.footer-widget ul li {
+    border: none;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.widget-block.footer-widget ul li a {
+    color: #666666; 
+}
+
+.textwidget p {
+    line-height: 24px;
+    font-size: 14px;
+}
+
+#footer .center {
+    padding: 50px 0;
+}
+
+#footer {
+    padding-bottom: 60px;
+}
+
+#footer .copyright-text p {
+    text-align: center;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+    .action-content {
+        text-align: center;
+    }
+
+    .purchase-link.text-right {
+        text-align: center !important;
+    }
+}
+
+
