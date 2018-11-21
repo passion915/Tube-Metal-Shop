@@ -42,3 +42,12 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## Setting up Project
+
+1. npm install
+2. npm install --save reactstrap react react-dom
+3. npm i react-alice-carousel
+4. npm install react-player --save
+5. npm install --save font-awesome

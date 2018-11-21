@@ -4,7 +4,8 @@ import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import 'font-awesome/css/font-awesome.min.css';
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
+
 
 import garage1 from '../../assets/images/garage-1.jpg';
 import garage2 from '../../assets/images/garage-2.jpg';
@@ -20,6 +21,7 @@ import carports4 from '../../assets/images/carports-4.jpg';
 import carports5 from '../../assets/images/carports-5.jpg';
 import carports6 from '../../assets/images/carports-6.jpg';
 import hiring_installers from '../../assets/images/hiring-installers.jpg';
+import black from '../../assets/images/black-bg.png';
 
 
 // COMPONENT
@@ -52,13 +54,22 @@ export default class HomePage extends React.Component {
         return (
             <main>
                 <div className="jumbotron jumbotron-fluid text-dark bg-black mb-none animated fadeIn">
-                    <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing />
+                    <section className="banner-title">
+                        <div className="title">Factory Direct</div>
+                        <div className="welcome">Welcome to the Tube Metal Shop</div>
+                        <div className="shopping"><span>Start Shopping Now</span></div>
+                    </section>
+
+                    <ReactPlayer url='https://vimeo.com/264897732' playing loop />
                 </div>
 
-                <div className="gallery-section">
+                
+
+                <div className="gallery-section pt-none">
+                    <div className="black-section"><img src={black} /></div>
+
                     <div className="container">
                         <div className="garages-gallery">
-                            
                             <div className="row">
                                 <div className="col-md-6 col-6 pl-40 align-left">
                                     <h3 className="section-title"><i className="fa fa-bolt mr-20 heading-icon"></i>Garages</h3>
