@@ -69,11 +69,7 @@ class HomePage extends React.Component {
         fetch(url)
             .then(response => response.json())
             .then(data => {
-                console.log("==========", data["results"]);
 
-                this.props.alert.show(<div id="alert"><span className="test"> { "South Carolina" + " - Group 1" } </span></div>);   
-                
-                
                 us_states.map( (us_state, i) => {
                     if( data["results"] != "" ) {
                         if( data["results"][0]["formatted_address"].indexOf( us_state[1] ) != -1 ) {
