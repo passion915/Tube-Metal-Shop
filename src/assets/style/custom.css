@@ -485,3 +485,7 @@ ul.alice-carousel__stage li.alice-carousel__stage-item .gallery-item h4 {
 }
 
 
+/* Alert */
+#alert:focus > .test {
+    padding: 10px;
+  }
