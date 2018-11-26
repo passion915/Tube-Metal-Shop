@@ -51,3 +51,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 3. npm i react-alice-carousel
 4. npm install react-player --save
 5. npm install --save font-awesome
+6. npm install react-geolocated --save
+7. npm install --save react-alert

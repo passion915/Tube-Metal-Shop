@@ -33,11 +33,6 @@ class HomePage extends React.Component {
     constructor(props) {
         super(props);
         this.state = { isCity: false };
-
-    }
-
-    componentDidMount() {
-        
     }
 
     componentDidUpdate(preProps) {
@@ -51,9 +46,7 @@ class HomePage extends React.Component {
     getAddress() {
         const url =  "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + 
             this.props.coords.latitude +  "," + this.props.coords.longitude + 
-            "&key=AIzaSyBeba6lzmMRiPE8ZwQjjnpeB-78l2ob86M";
-
-            console.log("===========lalala", this.props.coords.latitude);
+            "&key=AIzaSyD8hHncloOIme-JQ1JtRXTp3ZO259rX4dM";
 
         const us_states = [ ["1", "Alabama"], ["1", "Alaska"], ["2", "Arizona"], ["2", "Arkansas"], ["3", "California"]
             , ["3", "Colorado"], ["4", "Connecticut"], ["4", "Delaware"], ["5", "Florida"], ["5", "Georgia"]
@@ -64,20 +57,23 @@ class HomePage extends React.Component {
             , ["14", "New Mexico"], ["14", "New York"], ["15", "North Carolina"], ["15", "North Dakota"], ["15", "Ohio"]
             , ["16", "Oklahoma"], ["16", "Oregon"], ["16", "Pennsylvania"], ["17", "Rhode Island"], ["17", "South Carolina"]
             , ["17", "South Dakota"], ["18", "Tennessee"], ["18", "Texas"], ["18", "Utah"], ["19", "Vermont"]
-            , ["19", "Virginia"], ["19", "Washington"], ["20", "West Virginia"], ["20", "Wisconsin"], ["20", "Wyoming"] ];    
+            , ["19", "Virginia"], ["19", "Washington"], ["20", "West Virginia"], ["20", "Wisconsin"], ["20", "Wyoming"]
+            , ["21", "Hong Kong"] ];    
 
         fetch(url)
             .then(response => response.json())
             .then(data => {
-
-                us_states.map( (us_state, i) => {
-                    if( data["results"] != "" ) {
-                        if( data["results"][0]["formatted_address"].indexOf( us_state[1] ) != -1 ) {
-                            this.props.alert.show(<div> { us_state[1] + " - Group " + us_state[0] } </div>);   
-                        }
-                    }
+                console.log("=====data", data);
+                if( data["results"] != "" ) {
+                    data["results"].map( (data_result, j) => {
+                        us_states.map( (us_state, i) => {
+                            if( data_result[j]["formatted_address"].indexOf( us_state[1] ) != -1 ) {
+                                this.props.alert.show(<div> { us_state[1] + " - Group " + us_state[0] } </div>);   
+                            }
+                        });
+                    } )
                     
-                });
+                }
                 
 
                 
