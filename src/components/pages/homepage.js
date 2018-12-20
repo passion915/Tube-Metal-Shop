@@ -67,7 +67,7 @@ class HomePage extends React.Component {
                 if( data["results"] != "" ) {
                     data["results"].map( (data_result, j) => {
                         us_states.map( (us_state, i) => {
-                            if( data_result[j]["formatted_address"].indexOf( us_state[1] ) != -1 ) {
+                            if( data_result["formatted_address"].indexOf( us_state[1] ) != -1 ) {
                                 this.props.alert.show(<div> { us_state[1] + " - Group " + us_state[0] } </div>);   
                             }
                         });

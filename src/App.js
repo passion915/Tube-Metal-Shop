@@ -10,7 +10,7 @@ import './components/pages/TestPage';
 
 const options = {
   position: 'top right',
-  timeout: 500000,
+  timeout: 5000,
   offset: '30px',
   transition: 'fade',
   width: '100px'
