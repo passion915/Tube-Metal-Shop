@@ -17,7 +17,7 @@ class SheetMetal extends React.Component {
     render() {
         return (
             <div>
-                <h2>Sheet Metal Page</h2>
+                <h2>Sheet Metal Page test</h2>
             </div>
         )
     }
