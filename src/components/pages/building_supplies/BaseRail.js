@@ -7,8 +7,6 @@ class BaseRail extends React.Component {
         this.state = { isCity: false };
     }
     
-    
-
     componentDidMount() {
         
     }
@@ -17,7 +15,7 @@ class BaseRail extends React.Component {
     render() {
         return (
             <div>
-                <h2>Base Rail Page</h2>
+                <h2>Base Rail Page test</h2>
             </div>
         )
     }
