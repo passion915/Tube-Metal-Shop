@@ -17,7 +17,7 @@ class Trusses extends React.Component {
     render() {
         return (
             <div>
-                <h2>Trusses Page test12</h2>
+                <h2>Trusses Page test1</h2>
             </div>
         )
     }
