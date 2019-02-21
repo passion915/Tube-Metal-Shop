@@ -17,7 +17,7 @@ class Tubing extends React.Component {
     render() {
         return (
             <div>
-                <h2>Tubing Page</h2>
+                <h2>Tubing Page1</h2>
             </div>
         )
     }
