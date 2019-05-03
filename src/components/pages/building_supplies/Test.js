@@ -17,7 +17,7 @@ class Test extends React.Component {
     render() {
         return (
             <div>
-                <h2>Hardware Page 123456</h2>
+                <h2>Hardware Page 1234567</h2>
             </div>
         )
     }
