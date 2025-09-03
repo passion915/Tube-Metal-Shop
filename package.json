@@ -23,7 +23,7 @@
     "react-responsive-carousel": "^3.1.43",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
+    "react-scripts": "5.0.1",
     "react-slick": "^0.23.2",
     "react-vimeo": "^2.0.0",
     "reactstrap": "^6.5.0",
